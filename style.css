@@ -1,62 +1,31 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.container {
+  display: inline-block;
 }
-body {
-  background-image: url("a.jpg");
-}
-#DIV {
-  margin-bottom: 32px;
-  padding: 63px;
-}
-input {
-  border: none;
-  background-color: black;
-  width: 85%;
-  padding: 20px;
-  float: left;
-  color: white;
-  font-size: 16px;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-ul li {
-  cursor: pointer;
-  position: relative;
-  padding: 12px 8px 12px 40px;
-  margin: 18px;
-  list-style-type: none;
-  background: #eee;
-  font-size: 15;
-  transition: 0.2s;
-}
-.fa-star {
+.fa-bars {
   color: black;
+  font-size: 2em;
 }
-ul li:hover {
-  background: #ddd;
+.side {
+  width: 70%;
+  padding: 50px;
+  display: none;
+  transition-duration: 3s;
 }
-.box {
-  box-sizing: border-box;
-}
-ul li.checked {
-  background: wheat;
-  color: #fff;
+a {
+  text-decoration: none;
+  display: block;
+  color: black;
+  font-size: 20px;
 }
 
-ul li.checked::before {
-  content: "";
-  position: absolute;
-  border-color: #fff;
-  border-style: solid;
-  border-width: 0 2px 2px 0;
-  top: 10px;
-  left: 16px;
-  height: 15px;
-  width: 7px;
+.animate aide:hover {
+  width: 500px;
+}
+.animate aside {
+  width: 100%;
+  height: 700px;
+  background: lightgrey;
+  -webkit-transition: width 2s;
+
+  transition: width 2s;
 }
