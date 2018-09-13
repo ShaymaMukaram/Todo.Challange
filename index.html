@@ -6,29 +6,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="script.js"></script>
 </head>
 
 <body>
-    <div class="container" id="change">
-
-        <div class="animate">
-            <i class="fas fa-bars"></i>
-
+    <div class="flex-column d-flex justify-content-between " id="num">
+        <div class="row">
+            <div class="col-xs-3">
+                <input type="text" id="input">
+            </div>
         </div>
-        <aside class="side">
 
-            <a href="#">contact</a>
-            <a href="#">about</a>
-            <a href="#">search</a>
-        </aside>
+        <div class="row ">
+            <div class="col-xs-3 ">
+                <button type="button " class="btn btn-primary-dark " id="clear">c</button>
+
+                <button type="button " class="btn btn-primary-dark  " id="operation+">+/-</button>
+
+                <button type="button " class="btn btn-primary-dark " id="operation%">%</button>
+
+                <button type="button " class="btn btn-primary-dark  " id="operation/">/</button>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-xs-2 ">
+                <button type=" button " class="btn btn-primary-dark  " id="operation7">7</button>
+
+
+                <button type="button " class="btn btn-primary-dark  " id="operation8">8</button>
+
+                <button type="button " class="btn btn-primary-dark " id "operation9">9</button>
+
+                <button type="button " class="btn btn-primary-dark bgOrange " id="operation*">*</button>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-xs-2 ">
+                <button type="button " class="btn btn-primary-dark " id="operation4">4</button>
+                <button type="button " class="btn btn-primary-dark" id="operation5">5</button>
+
+                <button type="button " class="btn btn-primary-dark " id="operation6">6</button>
+
+                <button type="button " class="btn btn-primary-dark bgOrange " id="operation-">-</button>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-xs-2 ">
+                <button type="button " class="btn btn-primary-dark " id="operation1">1</button>
+
+                <button type="button " class="btn btn-primary-dark " id="operation2">2</button>
+
+                <button type="button " class="btn btn-primary-dark" id=" operation3">3</button>
+
+                <button type="button " class="btn btn-primary-dark bgOrange " id="operation+">+</button>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-xs-2 ">
+                <button type="button " class="btn btn-primary-dark" id="operation0">0</button>
+
+                <button type="button " class="btn btn-primary-dark " id="operation.">.</button>
+
+                <button type="button " class="flex-row btn btn-primary-dark bgOrange " id="operation=">=</button>
+
+            </div>
+        </div>
 
     </div>
+
 
 </body>
 

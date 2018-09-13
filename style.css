@@ -1,31 +1,29 @@
-.container {
-  display: inline-block;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-.fa-bars {
-  color: black;
-  font-size: 2em;
-}
-.side {
-  width: 70%;
-  padding: 50px;
-  display: none;
-  transition-duration: 3s;
-}
-a {
-  text-decoration: none;
-  display: block;
-  color: black;
-  font-size: 20px;
+body {
+  margin: 0 auto;
 }
 
-.animate aide:hover {
-  width: 500px;
+.fas fa-times {
+  color: white;
 }
-.animate aside {
+.row {
+  margin: 0 auto;
+}
+.btn {
+  background-color: rgb(201, 201, 201);
+  color: black;
+}
+.bgOrange {
+  background-color: orange;
+  color: white;
+}
+#input {
+  background-color: black;
   width: 100%;
-  height: 700px;
-  background: lightgrey;
-  -webkit-transition: width 2s;
-
-  transition: width 2s;
+  height: 85px;
+  color: white;
 }
