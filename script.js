@@ -1,23 +1,30 @@
-$(document).ready(function() {
-  $("#num").click(function() {});
+function func() {
+  $("#Div").click(function() {
+    let Nodelist = document.getElementsByTagName("LI");
+    let i;
+    for (i = 0; i < Nodelist.length; i++) {
+      let span = document.createElement("SPAN");
 
-  $("#clear").click(function() {
-    $("#input").val("");
+      span.appendChild(txt);
+      Nodelist[i].appendChild(span);
+    }
+
+    let list = document.querySelector("ul");
+    list.addEventListener("click", function(ev) {
+      let li = document.createElement("li");
+      let inputValue = document.getElementById("Input").value;
+      let t = document.createTextNode(inputValue);
+      li.appendChild(t);
+      if (inputValue === "") {
+        alert(" write something!");
+      } else {
+        document.getElementById("UL").appendChild(li);
+      }
+    });
+    $(".Input").keypress(function(e) {
+      if (e.which == 13) {
+        func();
+      }
+    });
   });
-});
-
-$("#operation1").val("1");
-$("#operation2").val("2");
-$("#operation3").val("3");
-$("#operation4").val("4");
-$("#operation5").val("5");
-$("#operation6").val("6");
-$("#operation7").val("7");
-$("#operation8").val("8");
-$("#operation9").val("9");
-$("#operation0").val("0");
-$("#operation+").val("+");
-$("#operation-").val("-");
-$("#operation=").val("=");
-$("#operation/").val("/");
-$("#operation%").val("%");
+}
